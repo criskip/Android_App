@@ -24,7 +24,11 @@ class Toasting_android_Chris : AppCompatActivity() {
         //listen for events
 
         btn_sub.setOnClickListener {
-            Toast.makeText(this, "I voted for Wajakoyah", Toast.LENGTH_SHORT).show()
+            var userinput = user_edt.text.toString().trim()
+            Toast.makeText(this, userinput, Toast.LENGTH_SHORT).show()
+            displayinfo.text = userinput.toString()
+
+            //Toast.makeText(this, "I voted for Wajakoyah", Toast.LENGTH_SHORT).show()
         }
     }
 }
