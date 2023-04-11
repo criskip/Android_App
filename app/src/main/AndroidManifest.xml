@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Chris_app"
         tools:targetApi="31">
         <activity
-            android:name=".Toasting_android_Chris"
+            android:name=".Intents_Android_Chris"
             android:exported="true" >
 
         <intent-filter>
@@ -24,16 +24,19 @@
         </activity>
 
         <activity
+            android:name=".Simple_CalculatorApp_Chris"
+            android:exported="false">
+
+        </activity>
+        <activity
             android:name=".Mytest"
             android:exported="false"></activity>
         <activity
             android:name=".RelativeLayoutActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".linearlayoutActivity"
             android:exported="false" />
