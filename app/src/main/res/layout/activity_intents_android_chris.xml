@@ -10,10 +10,10 @@
         android:id="@+id/mbtnSms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
         android:layout_marginTop="105dp"
         android:text="Sms"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mbtnEquity"
+        app:layout_constraintStart_toStartOf="@+id/mbtnCamera"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -69,17 +69,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="67dp"
-        android:layout_marginTop="75dp"
         android:text="Website"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mbtnMpesa" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/mbtnMap"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/mbtnMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="58dp"
         android:text="Map"
-        app:layout_constraintBaseline_toBaselineOf="@+id/mbtnWebsite"
-        app:layout_constraintStart_toEndOf="@+id/mbtnWebsite" />
+        app:layout_constraintBottom_toTopOf="@+id/mbtnKCB"
+        app:layout_constraintEnd_toEndOf="@+id/mbtnEmail"
+        app:layout_constraintStart_toStartOf="@+id/mbtnKCB" />
+
+    <Button
+        android:id="@+id/mbtnEquity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="117dp"
+        android:text="Equity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mbtnKCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:text="KCB"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mbtnEquity"
+        app:layout_constraintStart_toEndOf="@+id/mbtnEquity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

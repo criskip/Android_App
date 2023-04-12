@@ -16,6 +16,8 @@ class Intents_Android_Chris : AppCompatActivity() {
     private lateinit var btnCall:Button
     private lateinit var btnWebsite:Button
     private lateinit var btnMap:Button
+    private lateinit var btnEquity:Button
+    private lateinit var btnKCB:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +31,8 @@ class Intents_Android_Chris : AppCompatActivity() {
         btnCall = findViewById(R.id.mbtnCall)
         btnWebsite = findViewById(R.id.mbtnWebsite)
         btnMap = findViewById(R.id.mbtnMap)
+        btnEquity = findViewById(R.id.mbtnEquity)
+        btnKCB = findViewById(R.id.mbtnKCB)
 
 
         btnSms.setOnClickListener {
@@ -49,6 +53,21 @@ class Intents_Android_Chris : AppCompatActivity() {
         btnMpesa.setOnClickListener {
             val simToolkitIntent = applicationContext.packageManager.getLaunchIntentForPackage("com.android.stk")
             simToolkitIntent?.let { startActivity(it) }
+        }
+
+        btnWebsite.setOnClickListener {
+            val gotoanotheractivity = Intent(this, Website_Activity::class.java)
+            startActivity(gotoanotheractivity)
+        }
+
+        btnEquity.setOnClickListener {
+            val gotoequity = Intent(this, Equity_Activity::class.java)
+            startActivity(gotoequity)
+        }
+
+        btnKCB.setOnClickListener {
+            val gotokcb = Intent(this, KCB_Activity::class.java)
+            startActivity(gotokcb)
         }
 
     }
