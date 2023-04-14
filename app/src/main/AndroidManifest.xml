@@ -16,8 +16,10 @@
         android:theme="@style/Theme.Chris_app"
         tools:targetApi="31">
         <activity
-            android:name=".Simple_ListView_App"
-            android:exported="true" >
+            android:name=".SimpleNavDrawer_App"
+            android:exported="true"
+            android:label="@string/title_activity_simple_nav_drawer_app"
+            android:theme="@style/Theme.Chris_app.NoActionBar" >
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -27,6 +29,16 @@
 
         </activity>
 
+        <activity
+            android:name=".SimpleTabApplication"
+            android:exported="false"
+            android:label="@string/title_activity_simple_tab_application"
+            android:theme="@style/Theme.Chris_app.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Simple_ListView_App"
+            android:exported="false"></activity>
         <activity
             android:name=".KCB_Activity"
             android:exported="false" />
@@ -38,9 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".Intents_Android_Chris"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Simple_CalculatorApp_Chris"
             android:exported="false" />
