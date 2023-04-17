@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLite_App_Chris">
+
+    <EditText
+        android:hint="Enter Name"
+        android:id="@+id/mEdtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/mEdtEmail"
+        app:layout_constraintStart_toStartOf="@+id/mEdtEmail" />
+
+    <EditText
+        android:hint="Enter Email"
+        android:id="@+id/mEdtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="262dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/mEdtIdNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:hint="Enter ID number"
+        android:id="@+id/mEdtIdNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/mbtnSave"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtEmail" />
+
+    <Button
+        android:id="@+id/mbtnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Save"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mbtnView"
+        app:layout_constraintEnd_toStartOf="@+id/mbtnView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mbtnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="17dp"
+        android:text="View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mbtnSave"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtIdNumber" />
+
+    <Button
+        android:id="@+id/mbtnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="59dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/mbtnView"
+        app:layout_constraintStart_toStartOf="@+id/mbtnSave"
+        app:layout_constraintTop_toBottomOf="@+id/mbtnSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
